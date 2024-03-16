@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="OuterRim_JetpackBase">
+		<defName>OuterRim_ImperialJetpack</defName>
+		<label>imperial jetpack</label>
+		<description>A jetpack built for use by jet troopers and imperial commandos in the Galactic Empire.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/ImperialJetpack/Apparel</texPath>
+		</graphicData>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<wornGraphicPath>OuterRim/Apparel/ImperialJetpack/Apparel</wornGraphicPath>
+			<tags>
+				<li>ImperialJetpack</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+				<abilities>
+					<li>OuterRim_ImperialJetpackJump</li>
+				</abilities>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<VFECore.Abilities.AbilityDef ParentName="OuterRimJetpackAbilityBase">
+		<defName>OuterRim_ImperialJetpackJump</defName>
+		<iconPath>OuterRim/Apparel/ImperialJetpack/Apparel</iconPath>
+	</VFECore.Abilities.AbilityDef>
+
+</Defs>

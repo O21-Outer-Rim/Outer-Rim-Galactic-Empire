@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PawnKindDef ParentName="OuterRim_BaseColonyPawnKind">
+		<defName>OuterRim_Stormtrooper_PlayerNoHelmet</defName>
+		<label>Stormtrooper</label>
+		<race>Human</race>
+		<defaultFactionType>OuterRim_EmpirePlayerFaction</defaultFactionType>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialStandard</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>ImperialStormtrooper</li>
+			<li>ORThermalDetBelt</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_Bodysuit</li>
+			<li>OuterRim_StormtrooperCuirass</li>
+			<li>OuterRim_StormtrooperPauldrons</li>
+		</apparelRequired>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<additionalHediffs>
+					<li>
+						<hediff>OuterRim_StormtrooperTraining</hediff>
+						<severityRange>0.1~0.25</severityRange>
+					</li>
+				</additionalHediffs>
+				<randomAdditionalHediff>false</randomAdditionalHediff>
+				<clearChronicIllness>True</clearChronicIllness>
+				<clearAddictions>True</clearAddictions>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_BaseColonyPawnKind">
+		<defName>OuterRim_Stormtrooper_PlayerRecruit</defName>
+		<label>Stormtrooper</label>
+		<race>Human</race>
+		<defaultFactionType>OuterRim_EmpirePlayerFaction</defaultFactionType>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialStandard</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>ImperialStormtrooper</li>
+			<li>ORThermalDetBelt</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_Bodysuit</li>
+			<li>OuterRim_StormtrooperCuirass</li>
+			<li>OuterRim_StormtrooperPauldrons</li>
+			<li>OuterRim_StormtrooperHelmet</li>
+		</apparelRequired>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<additionalHediffs>
+					<li>
+						<hediff>OuterRim_StormtrooperTraining</hediff>
+						<severityRange>0.01~0.02</severityRange>
+					</li>
+				</additionalHediffs>
+				<randomAdditionalHediff>false</randomAdditionalHediff>
+				<clearChronicIllness>True</clearChronicIllness>
+				<clearAddictions>True</clearAddictions>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+</Defs>

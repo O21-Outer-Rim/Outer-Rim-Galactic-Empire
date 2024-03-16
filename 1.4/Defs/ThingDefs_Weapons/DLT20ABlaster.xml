@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRimBlasterBase_Rifle">
+		<defName>OuterRim_DLT20ABlaster</defName>
+		<label>dlt-20a blaster rifle</label>
+		<description>The DLT-20A blaster rifle, also known as the DLT-20A laser rifle, was a model of blaster rifle produced by BlasTech Industries. Members of the Galactic Empire's Stormtrooper Corps sometimes used DLT-20As instead of their standard issue E-11 blaster rifles. IG-assassin droid IG-11 carried this model of rifle, without the scope attached. Another type of rifle, the pulse cannon, utilized the frame assembly of a DLT-20A.</description>
+		<graphicData>
+			<texPath>OuterRim/Weapons/DLT20ABlaster</texPath>
+			<drawSize>1.1</drawSize>	
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
+		</recipeMaker>
+		<weaponTags>
+			<li>ORImperialAny</li>
+			<li>ORImperialStandard</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OuterRim_ImperialWeapons</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OuterRim_Bullet_RifleRed</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>36</range>
+				<ticksBetweenBurstShots>18</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>OuterRim_Shot_DLT20BBlasterBolt</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="OuterRimBlasterBase_Projectile">
+		<defName>OuterRim_Bullet_DLT20ABlaster</defName>
+		<graphicData>
+			<texPath>OuterRim/Projectile/BlasterBolt_Red</texPath>
+		</graphicData>
+		<projectile>
+			<damageAmountBase>16</damageAmountBase>
+		</projectile>
+	</ThingDef>
+
+</Defs>

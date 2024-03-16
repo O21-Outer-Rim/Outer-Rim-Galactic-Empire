@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="StormtrooperArmorCuirassBase">
+		<defName>OuterRim_ImperialArmyCuirass</defName>
+		<label>imperial army cuirass </label>
+		<description>An armoured cuirass used by the Galactic Empire in the Imperial Army.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/ImperialArmy/Cuirass/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<color>(93, 110, 87)</color>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialArmy</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/ImperialArmy/Cuirass/Apparel</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(93, 110, 87)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+</Defs>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRimBlasterBase_Rifle">
+		<defName>OuterRim_E10BlasterRifle</defName>
+		<label>e-10 blaster rifle</label>
+		<description>The E-10 blaster rifle was a model of blaster rifle manufactured by BlasTech Industries used by Imperial Army troopers and Imperial Stormtroopers of the Galactic Empire. It was equipped with a glow rod for low-light vision.</description>
+		<graphicData>
+			<texPath>OuterRim/Weapons/E10Blaster</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
+		</recipeMaker>
+		<weaponTags>
+			<li>ORImperialAny</li>
+			<li>ORImperialStandardEarly</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OuterRim_ImperialWeapons</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OuterRim_Bullet_RifleRed</defaultProjectile>
+				<warmupTime>0.85</warmupTime>
+				<range>31</range>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>OuterRim_Shot_E11BlasterBolt</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+</Defs>

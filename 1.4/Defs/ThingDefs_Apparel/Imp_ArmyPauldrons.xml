@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="StormtrooperArmorPauldronBase">
+		<defName>OuterRim_ImperialArmyPauldrons</defName>
+		<label>imperial army pauldrons</label>
+		<description>Armoured Pauldrons used by the Galactic Empire in the Imperial Army.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/ImperialArmy/Pauldrons/Apparel</texPath>
+			<shaderType>Cutout</shaderType>
+			<color>(93, 110, 87)</color>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialArmy</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/ImperialArmy/Pauldrons/Apparel</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(93, 110, 87)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+</Defs>

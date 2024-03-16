@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRimBlasterBase_SniperRifle">
+		<defName>OuterRim_DLT19XTargetingBlaster</defName>
+		<label>dlt-19x targeting blaster</label>
+		<description>The DLT-19x targeting blaster was a blaster rifle, and a variation of the DLT-19 heavy blaster rifle. Unlike the DLT-19, the DLT-19x released all of its power in one shot before it would need to cool down. The DLT-19x was an incredibly powerful weapon, and could take down most enemies in one shot. The weapon had a scope which could be zoomed in farther than most scopes. This targeting blaster was silent and effective, and as such, was a weapon of choice for many snipers, and the primary weapon for some Imperial sharpshooters. The LOM-series bounty hunter 4-LOM also wielded a DLT-19x.</description>
+		<graphicData>
+			<texPath>OuterRim/Weapons/DLT19Blaster</texPath>
+			<drawSize>1.1</drawSize>	
+		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
+		</recipeMaker>
+		<weaponTags>
+			<li>ORImperialAny</li>
+			<li>ORImperialSniper</li>
+			<li>ORRebelSniper</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OuterRim_ImperialWeapons</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OuterRim_Bullet_SniperRed</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>42</range>
+				<soundCast>OuterRim_Shot_DLT19DBlasterBolt</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="OuterRimBlasterBase_Projectile">
+		<defName>OuterRim_Bullet_DLT19XTargetingBlaster</defName>
+		<graphicData>
+			<texPath>OuterRim/Projectile/BlasterBolt_Red</texPath>
+		</graphicData>
+		<projectile>
+			<damageAmountBase>30</damageAmountBase>
+		</projectile>
+	</ThingDef>
+
+</Defs>

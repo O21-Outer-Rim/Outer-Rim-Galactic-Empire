@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="OuterRimBlasterBase_HeavyWeapon">
+		<defName>OuterRim_D72wOppressor</defName>
+		<label>d-72w oppressor flame projector</label>
+		<description>A powerful flamethrower used by the Galactic Empire. The weapon was particularly useful in clearing out buildings.</description>
+		<graphicData>
+			<texPath>OuterRim/Weapons/D72wOppressor</texPath>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<statBases>
+			<AccuracyTouch>0.25</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
+		</recipeMaker>
+		<weaponTags>
+			<li>ORImperialAny</li>
+			<li>ORImperialHeavy</li>
+			<li>ORImperialFire</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OuterRim_ImperialWeapons</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>HeavyWeapons.Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OuterRim_Bullet_D72wOppressor</defaultProjectile>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<warmupTime>1.1</warmupTime>
+				<range>11.9</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>OuterRim_Shot_FlameProjector</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>OuterRim_Bullet_D72wOppressor</defName>
+		<label>heavy flamer shot</label>
+		<thingClass>VFECore.FlamethrowProjectile</thingClass>
+		<graphicData>
+			<texPath>OuterRim/Projectile/Proj_Flamer</texPath>
+			<texPathFadeOut>OuterRim/Projectile/Proj_FlamerFadeOut</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Flame</damageDef>
+			<speed>45</speed>
+			<damageAmountBase>12</damageAmountBase>
+		</projectile>
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>50</lifeTimeDuration>
+		<widthScaleFactor>0.85</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+		<totalSizeScale>1.15</totalSizeScale>
+		<tickFrameRate>2</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<minDistanceToAffect>2</minDistanceToAffect>
+	</VFECore.ExpandableProjectileDef>
+
+</Defs>

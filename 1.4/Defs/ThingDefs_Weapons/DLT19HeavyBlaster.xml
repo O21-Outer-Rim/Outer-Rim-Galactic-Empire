@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRimBlasterBase_SniperRifle">
+		<defName>OuterRim_DLT19HeavyBlasterRifle</defName>
+		<label>dlt-19 heavy blaster rifle</label>
+		<description>The DLT-19 heavy blaster rifle was a model of heavy blaster rifle manufactured by BlasTech Industries. They were used by regular stormtroopers and Heavy Weapons Stormtroopers of the Galactic Empire, but they also saw use by other parties, including the Alliance to Restore the Republic and certain bounty hunters.</description>
+		<graphicData>
+			<texPath>OuterRim/Weapons/DLT19XBlaster</texPath>
+			<drawSize>1.1</drawSize>	
+		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<statBases>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.64</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
+		</recipeMaker>
+		<weaponTags>
+			<li>ORImperialAny</li>
+			<li>ORImperialHeavy</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OuterRim_ImperialWeapons</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OuterRim_Bullet_PistolRed</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<range>36</range>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				<soundCast>OuterRim_Shot_HeavyMinigunBlasterBolt</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+</Defs>

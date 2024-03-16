@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="OuterRim_LightArmorFabricatedBase">
+		<defName>OuterRim_ScoutTrooperCuirass</defName>
+		<label>scout trooper cuirass</label>
+		<description>A lightly armoured cuirass used by the Galactic Empire in the Stormtrooper Corps.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/Stormtrooper/ScoutCuirass/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialApparel</li>
+				<li>ImperialScout</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/Stormtrooper/ScoutCuirass/Apparel</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>OuterRim_ApparelGalacticEmpire</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

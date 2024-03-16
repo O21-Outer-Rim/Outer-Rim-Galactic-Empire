@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="BaseImperialDroidPawn" Abstract="True">
+		<defaultFactionType>OuterRim_GalacticEmpire</defaultFactionType>
+		<backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<itemQuality>Normal</itemQuality>
+		<isFighter>true</isFighter>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>300</min>
+			<max>1200</max>
+		</apparelMoney>
+		<apparelTags Inherit="false">
+			<li>DroidArmor</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>OuterRim_DroidArmorModule</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<stuff>OuterRim_Durasteel</stuff>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>
+			<min>40000</min>
+			<max>40000</max>
+		</weaponMoney>
+		<techHediffsMoney>
+			<min>12000</min>
+			<max>20000</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0</techHediffsChance>
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>OuterRim_DroidBattery_Full</thingDef>
+					<countRange>3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>10~20</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- <PawnKindDef ParentName="BaseImperialDroidPawn">
+		<defName>OuterRim_EMP_DTSeriesSentryDroid</defName>
+		<label>DT Sentry Droid</label>
+		<labelPlural>DT Sentry Droids</labelPlural>
+		<race>OuterRim_DTSentryDroid</race>
+		<isFighter>true</isFighter>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>DTSeriesSentryDroidBackstory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<weaponTags Inherit="false" />
+		<techHediffsRequired Inherited="False">
+			<li>OuterRim_DroidTwinWristBlaster</li>
+		</techHediffsRequired>
+		<combatPower>160</combatPower>
+	</PawnKindDef> -->
+
+	<PawnKindDef ParentName="BaseImperialDroidPawn">
+		<defName>OuterRim_ImperialKXSecurityDroid</defName>
+		<label>KX Security Droid</label>
+		<labelPlural>Security Droids</labelPlural>
+		<race>OuterRim_KXSecurityDroid</race>
+		<isFighter>true</isFighter>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>KXSecurityDroidBackstory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<weaponTags Inherit="false">
+			<li>ORImperialLight</li>
+		</weaponTags>
+		<combatPower>120</combatPower>
+	</PawnKindDef>
+
+</Defs>

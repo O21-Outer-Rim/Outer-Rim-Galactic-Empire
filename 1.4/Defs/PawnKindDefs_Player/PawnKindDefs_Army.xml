@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PawnKindDef ParentName="OuterRim_BaseColonyPawnKind">
+		<defName>OuterRim_ImperialArmy_PlayerStarter</defName>
+		<label>imperial army trooper</label>
+		<race>Human</race>
+		<defaultFactionType>OuterRim_EmpirePlayerFaction</defaultFactionType>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialStandardEarly</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelTags Inherit="false">
+			<li>ImperialArmy</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_ImperialArmyUniform</li>
+			<li>OuterRim_ImperialArmyCuirass</li>
+			<li>OuterRim_ImperialArmyPauldrons</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_BaseColonyPawnKind">
+		<defName>OuterRim_ImperialArmy_PlayerRecruit</defName>
+		<label>imperial army trooper</label>
+		<race>Human</race>
+		<defaultFactionType>OuterRim_EmpirePlayerFaction</defaultFactionType>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialStandardEarly</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags Inherit="false">
+			<li>ImperialArmyFatigues</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_ImperialArmyUniform</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+</Defs>
