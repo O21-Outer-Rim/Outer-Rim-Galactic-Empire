@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="OuterRim_EMPStormBase" Abstract="True">
+		<defaultFactionType>OuterRim_GalacticEmpire</defaultFactionType>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<itemQuality>Normal</itemQuality>
+		<isFighter>true</isFighter>
+		<race>Human</race>
+		<minGenerationAge>20</minGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>1300</min>
+			<max>2000</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>ImperialApparel</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>40000</min>
+			<max>40000</max>
+		</weaponMoney>
+		<techHediffsMoney>
+			<min>12000</min>
+			<max>20000</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.9</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>1</countRange>
+				</li>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>10~300</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<!-- <backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>ImperialBackstory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride> -->
+		<techHediffsChance>0.1</techHediffsChance>
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>10~20</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_EMPStormBase">
+		<defName>OuterRim_ImperialTrader</defName>
+		<label>trader</label>
+		<labelPlural>traders</labelPlural>
+		<isFighter>true</isFighter>
+		<trader>true</trader>
+		<weaponTags Inherit="false">
+			<li>ORImperialOfficer</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>0.85</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORImperialLight</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_ImperialOfficerUniform_Black</li>
+			<li>OuterRim_ImperialOfficerCap_Black</li>
+		</apparelRequired>
+		<combatPower>50</combatPower>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<additionalHediffs>
+					<li>
+						<hediff>OuterRim_StormtrooperTraining</hediff>
+						<severityRange>0.1~0.68</severityRange>
+					</li>
+				</additionalHediffs>
+				<randomAdditionalHediff>false</randomAdditionalHediff>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_EMPStormBase">
+		<defName>OuterRim_ImpStormtrooper</defName>
+		<label>stormtrooper</label>
+		<labelPlural>stormtroopers</labelPlural>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialStandard</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>ImperialStormtrooper</li>
+			<li>ORThermalDetBelt</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_Bodysuit</li>
+			<li>OuterRim_StormtrooperCuirass</li>
+			<li>OuterRim_StormtrooperPauldrons</li>
+			<li>OuterRim_StormtrooperHelmet</li>
+		</apparelRequired>
+		<combatPower>100</combatPower>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<additionalHediffs>
+					<li>
+						<hediff>OuterRim_StormtrooperTraining</hediff>
+						<severityRange>0.1~0.48</severityRange>
+					</li>
+				</additionalHediffs>
+				<randomAdditionalHediff>false</randomAdditionalHediff>
+				<clearChronicIllness>True</clearChronicIllness>
+				<clearAddictions>True</clearAddictions>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_EMPStormBase">
+		<defName>OuterRim_ImpStormtrooper_Officer</defName>
+		<label>stormtrooper officer</label>
+		<labelPlural>stormtrooper officer</labelPlural>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialLight</li>
+			<li>ORImperialStandard</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>ImperialStormtrooper</li>
+			<li>ORThermalDetBelt</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_Bodysuit</li>
+			<li>OuterRim_StormtrooperCuirass</li>
+			<li>OuterRim_StormtrooperPauldrons_Officer</li>
+			<li>OuterRim_StormtrooperHelmet</li>
+		</apparelRequired>
+		<combatPower>100</combatPower>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<additionalHediffs>
+					<li>
+						<hediff>OuterRim_StormtrooperTraining</hediff>
+						<severityRange>0.4~0.68</severityRange>
+					</li>
+				</additionalHediffs>
+				<randomAdditionalHediff>false</randomAdditionalHediff>
+				<clearChronicIllness>True</clearChronicIllness>
+				<clearAddictions>True</clearAddictions>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_EMPStormBase">
+		<defName>OuterRim_ImpStormArty</defName>
+		<label>artillery trooper</label>
+		<labelPlural>artillery troopers</labelPlural>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialLight</li>
+			<li>ORImperialHeavyExplosive</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>ImperialStormtrooper</li>
+			<li>ImperialStormtrooperSpecialist</li>
+			<li>ORThermalDetBelt</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_Bodysuit</li>
+			<li>OuterRim_StormtrooperCuirass_Specialist</li>
+			<li>OuterRim_StormtrooperPauldrons_Artillery</li>
+			<li>OuterRim_StormtrooperHelmet_Specialist</li>
+		</apparelRequired>
+		<combatPower>80</combatPower>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<additionalHediffs>
+					<li>
+						<hediff>OuterRim_StormtrooperTraining</hediff>
+						<severityRange>0.2~0.68</severityRange>
+					</li>
+				</additionalHediffs>
+				<randomAdditionalHediff>false</randomAdditionalHediff>
+				<clearChronicIllness>True</clearChronicIllness>
+				<clearAddictions>True</clearAddictions>
+			</li>
+		</modExtensions>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(235, 174, 52)</color>
+			</li>
+			<li>
+				<apparelLayer>ShellExtra</apparelLayer>
+				<color>(235, 174, 52)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(235, 174, 52)</color>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_EMPStormBase">
+		<defName>OuterRim_ImpStormJump</defName>
+		<label>jump trooper</label>
+		<labelPlural>jump troopers</labelPlural>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialSniper</li>
+			<li>ORImperialStandard</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>ImperialStormtrooper</li>
+			<li>ImperialStormtrooperSpecialist</li>
+			<li>ORThermalDetBelt</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_Bodysuit</li>
+			<li>OuterRim_StormtrooperCuirass_Specialist</li>
+			<li>OuterRim_StormtrooperPauldrons_Enlisted</li>
+			<li>OuterRim_StormtrooperHelmet_Specialist</li>
+			<li>OuterRim_ImperialJetpack</li>
+		</apparelRequired>
+		<combatPower>80</combatPower>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<additionalHediffs>
+					<li>
+						<hediff>OuterRim_StormtrooperTraining</hediff>
+						<severityRange>0.2~0.68</severityRange>
+					</li>
+				</additionalHediffs>
+				<randomAdditionalHediff>false</randomAdditionalHediff>
+				<clearChronicIllness>True</clearChronicIllness>
+				<clearAddictions>True</clearAddictions>
+			</li>
+		</modExtensions>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(64, 64, 64)</color>
+			</li>
+			<li>
+				<apparelLayer>ShellExtra</apparelLayer>
+				<color>(64, 64, 64)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(64, 64, 64)</color>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_EMPStormBase">
+		<defName>OuterRim_ImpStormIncinerator</defName>
+		<label>incinerator trooper</label>
+		<labelPlural>incinerator troopers</labelPlural>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialLight</li>
+			<li>ORImperialHeavy</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>ImperialStormtrooper</li>
+			<li>ImperialStormtrooperSpecialist</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_Bodysuit</li>
+			<li>OuterRim_StormtrooperCuirass_Specialist</li>
+			<li>OuterRim_StormtrooperPauldrons_Commander</li>
+			<li>OuterRim_StormtrooperHelmet_Specialist</li>
+		</apparelRequired>
+		<combatPower>80</combatPower>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<additionalHediffs>
+					<li>
+						<hediff>OuterRim_StormtrooperTraining</hediff>
+						<severityRange>0.2~0.68</severityRange>
+					</li>
+				</additionalHediffs>
+				<randomAdditionalHediff>false</randomAdditionalHediff>
+				<clearChronicIllness>True</clearChronicIllness>
+				<clearAddictions>True</clearAddictions>
+			</li>
+		</modExtensions>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(140, 56, 56)</color>
+			</li>
+			<li>
+				<apparelLayer>ShellExtra</apparelLayer>
+				<color>(140, 56, 56)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(140, 56, 56)</color>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_EMPStormBase">
+		<defName>OuterRim_ImpStormtrooper_Desert</defName>
+		<label>desert trooper</label>
+		<labelPlural>desert troopers</labelPlural>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialStandard</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>ImperialStormtrooper</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_Bodysuit</li>
+			<li>OuterRim_StormtrooperCuirass</li>
+			<li>OuterRim_StormtrooperPauldrons</li>
+			<li>OuterRim_StormtrooperHelmet</li>
+		</apparelRequired>
+		<combatPower>100</combatPower>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<additionalHediffs>
+					<li>
+						<hediff>OuterRim_StormtrooperTraining</hediff>
+						<severityRange>0.1~0.68</severityRange>
+					</li>
+				</additionalHediffs>
+				<randomAdditionalHediff>false</randomAdditionalHediff>
+				<clearChronicIllness>True</clearChronicIllness>
+				<clearAddictions>True</clearAddictions>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_EMPStormBase">
+		<defName>OuterRim_ImpStormtrooper_Snow</defName>
+		<label>snow trooper</label>
+		<labelPlural>snow troopers</labelPlural>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialStandard</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>ImperialStormtrooper</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_Bodysuit</li>
+			<li>OuterRim_StormtrooperCuirass</li>
+			<li>OuterRim_StormtrooperPauldrons</li>
+			<li>OuterRim_StormtrooperHelmet</li>
+		</apparelRequired>
+		<combatPower>100</combatPower>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<additionalHediffs>
+					<li>
+						<hediff>OuterRim_StormtrooperTraining</hediff>
+						<severityRange>0.1~0.68</severityRange>
+					</li>
+				</additionalHediffs>
+				<randomAdditionalHediff>false</randomAdditionalHediff>
+				<clearChronicIllness>True</clearChronicIllness>
+				<clearAddictions>True</clearAddictions>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_EMPStormBase">
+		<defName>OuterRim_ImpStormScout</defName>
+		<label>scout trooper</label>
+		<labelPlural>scout troopers</labelPlural>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialLight</li>
+			<li>ORImperialSniper</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>ImperialStormtrooper</li>
+			<li>ORThermalDetBelt</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_Bodysuit</li>
+			<li>OuterRim_ScoutTrooperCuirass</li>
+			<li>OuterRim_ScoutTrooperPauldrons</li>
+			<li>OuterRim_ScoutTrooperHelmet</li>
+		</apparelRequired>
+		<combatPower>120</combatPower>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<additionalHediffs>
+					<li>
+						<hediff>OuterRim_StormtrooperTraining</hediff>
+						<severityRange>0.2~0.68</severityRange>
+					</li>
+				</additionalHediffs>
+				<randomAdditionalHediff>false</randomAdditionalHediff>
+				<clearChronicIllness>True</clearChronicIllness>
+				<clearAddictions>True</clearAddictions>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_EMPStormBase">
+		<defName>OuterRim_ImperialOfficer</defName>
+		<label>imperial officer</label>
+		<labelPlural>imperial officers</labelPlural>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialLight</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ImperialOfficer</li>
+			<li>ORThermalDetBelt</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_ImperialOfficerUniform</li>
+			<li>OuterRim_ImperialOfficerCap</li>
+		</apparelRequired>
+		<combatPower>175</combatPower>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<additionalHediffs>
+					<li>
+						<hediff>OuterRim_StormtrooperTraining</hediff>
+						<severityRange>0.3~0.45</severityRange>
+					</li>
+				</additionalHediffs>
+				<randomAdditionalHediff>false</randomAdditionalHediff>
+				<clearChronicIllness>True</clearChronicIllness>
+				<clearAddictions>True</clearAddictions>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_EMPStormBase">
+		<defName>OuterRim_ImpISBAgent</defName>
+		<label>isb agent</label>
+		<labelPlural>isb agents</labelPlural>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialLight</li>
+			<li>ORImperialStandard</li>
+			<li>ORImperialSniper</li>
+			<li>ORRifleRare</li>
+		</weaponTags>
+		<apparelTags Inherit="False">
+			<li>ImperialOfficer</li>
+			<li>ORThermalDetBelt</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_ImperialOfficerUniform_Black</li>
+			<li>OuterRim_ISBAgentCuirass</li>
+			<li>OuterRim_ISBAgentHelmet</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<combatPower>200</combatPower>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<additionalHediffs>
+					<li>
+						<hediff>OuterRim_ISBTraining</hediff>
+						<severityRange>0.3~0.5</severityRange>
+					</li>
+				</additionalHediffs>
+				<randomAdditionalHediff>false</randomAdditionalHediff>
+				<clearChronicIllness>True</clearChronicIllness>
+				<clearAddictions>True</clearAddictions>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_EMPStormBase">
+		<defName>OuterRim_ImpStormCommander</defName>
+		<label>stormtrooper commander</label>
+		<labelPlural>stormtrooper commanders</labelPlural>
+		<isFighter>true</isFighter>
+		<factionLeader>true</factionLeader>
+		<weaponTags Inherit="false">
+			<li>ORImperialAny</li>
+		</weaponTags>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>ImperialStormtrooper</li>
+			<li>ORThermalDetBelt</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_Bodysuit</li>
+			<li>OuterRim_StormtrooperCuirass</li>
+			<li>OuterRim_StormtrooperPauldrons_Commander</li>
+			<li>OuterRim_StormtrooperHelmet</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<combatPower>200</combatPower>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<additionalHediffs>
+					<li>
+						<hediff>OuterRim_StormtrooperTraining</hediff>
+						<severityRange>0.8~1.0</severityRange>
+					</li>
+				</additionalHediffs>
+				<randomAdditionalHediff>false</randomAdditionalHediff>
+				<clearChronicIllness>True</clearChronicIllness>
+				<clearAddictions>True</clearAddictions>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+</Defs>

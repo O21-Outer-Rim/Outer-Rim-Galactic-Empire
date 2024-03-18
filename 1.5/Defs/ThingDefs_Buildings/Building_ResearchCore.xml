@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="OuterRimResearchCoreBase">
+		<defName>OuterRim_ResearchCore_GalacticEmpire</defName>
+		<label>research core (galactic empire)</label>
+		<graphicData>
+			<texPath>OuterRim/Building/ResearchCore_Imperial</texPath>
+		</graphicData>
+		<thingSetMakerTags>
+			<li>OuterRim_RewardGalacticEmpire</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>

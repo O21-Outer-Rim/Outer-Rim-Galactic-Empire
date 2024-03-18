@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ScenarioDef>
+		<defName>OuterRim_EmpireStart</defName>
+		<label>Imperial Troopers</label>
+		<description>The four of you arrive on this world, raw recruits sent to establish a self sufficient outpost as part of a new long term strategy. New recruits will be sent to you regularly to maintain a minimum garrison.\n\nNote: Reasonably easy due to research and equipment handed to you.</description>
+		<scenario>
+			<summary>Four Stormtroopers aligned with the Empire.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>OuterRim_EmpirePlayerFaction</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>4</pawnCount>
+					<pawnChoiceCount>8</pawnChoiceCount>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+				</li>
+				<li Class="TabulaRasa.ScenPart_ReinforcementJoins">
+					<def>TabulaRasa_ReinforcementJoins</def>
+					<intervalDays>7</intervalDays>
+					<maxPawns>8</maxPawns>
+					<repeat>True</repeat>
+					<pawnKind>OuterRim_ImperialArmy_PlayerRecruit</pawnKind>
+					<arrivalMode>DropPods</arrivalMode>
+					<faction>OuterRim_GalacticEmpire</faction>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>800</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>50</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_KoltoGelPack</thingDef>
+					<count>15</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_BactaSpray</thingDef>
+					<count>10</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_ImperialArmyHelmet</thingDef>
+					<count>4</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_E10BlasterRifle</thingDef>
+					<count>4</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>45</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_ComponentHypertech</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_ResearchCore_GalacticEmpire</thingDef>
+					<count>1</count>
+				</li>
+				<!-- <li Class="ScenPart_StartingThing_Defined" MayRequire="Neronix17.OuterRim.DroidDepot">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_MSEDroidPlatform</thingDef>
+					<count>1</count>
+				</li> -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>250</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>150</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>7</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>150</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>OuterRim_Durasteel</thingDef>
+					<count>300</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>OuterRim_ImperialArmory</project>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text />
+					<textKey>GameStartDialog</textKey>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				<!-- <li Class="KCSG.ScenPart_AddStartingStructure">
+					<def>VFEC_AddStartingStructure</def>
+					<structureLabel>A small Imperial outpost with basic equipment and defences.</structureLabel>
+					<nearMapCenter>True</nearMapCenter>
+					<chooseFrom>
+						<li>OuterRim_Starter_ImperialOutpostA</li>
+					</chooseFrom>
+				</li> -->
+				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+					<def>VFEC_ForcedFactionGoodwill</def>
+					<factionDef>OuterRim_GalacticEmpire</factionDef>
+					<affectStartingGoodwill>True</affectStartingGoodwill>
+					<startingGoodwillRange>100~100</startingGoodwillRange>
+				</li>
+				<li Class="VFECore.ScenPart_ForcedFactionGoodwill" MayRequire="Neronix17.OuterRim.RebelAlliance">
+					<def>VFEC_ForcedFactionGoodwill</def>
+					<factionDef>OuterRim_RebelAlliance</factionDef>
+					<affectStartingGoodwill>True</affectStartingGoodwill>
+					<startingGoodwillRange>-100~-100</startingGoodwillRange>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+	<!-- <ScenarioDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>OuterRim_EmpireCadetsStart</defName>
+		<label>Imperial Training Grounds</label>
+		<description>A lone Imperial Officer sent to set up a training outpost for Imperial Academy Cadets, maybe speaking up during that meeting with Vader wasn't such a good idea. You'll be sent a new cadet to train every 14 days.\n\nNote: A more difficult Imperial start, only standard crash landing research is unlocked, much lighter equipment is provided and with much less initial resources.</description>
+		<scenario>
+			<summary>Four cadets and an officer from the Imperial Academy.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>OuterRim_EmpirePlayerFaction</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+					<def>ConfigurePawnsKindDefs</def>
+					<pawnChoiceCount>1</pawnChoiceCount>
+					<leftBehindPawnKind>OuterRim_Officer_Player</leftBehindPawnKind>
+					<kindCounts>
+						<li>
+							<kindDef>OuterRim_Officer_Player</kindDef>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+					</kindCounts>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+				</li>
+				<li Class="TabulaRasa.ScenPart_ReinforcementJoins">
+					<def>TabulaRasa_ReinforcementJoins</def>
+					<intervalDays>14</intervalDays>
+					<repeat>True</repeat>
+					<pawnKind>OuterRim_Cadet_Player</pawnKind>
+					<arrivalMode>DropPods</arrivalMode>
+					<faction>OuterRim_GalacticEmpire</faction>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>400</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>80</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_KoltoGelPack</thingDef>
+					<count>10</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_BactaSpray</thingDef>
+					<count>10</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_EC17Blaster</thingDef>
+					<count>5</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>35</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_ComponentHypertech</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_ResearchCore_GalacticEmpire</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>300</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>100</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>7</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>200</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>OuterRim_Durasteel</thingDef>
+					<count>300</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text />
+					<textKey>GameStartDialog</textKey>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+					<def>VFEC_ForcedFactionGoodwill</def>
+					<factionDef>OuterRim_GalacticEmpire</factionDef>
+					<affectStartingGoodwill>True</affectStartingGoodwill>
+					<startingGoodwillRange>100~100</startingGoodwillRange>
+				</li>
+				<li Class="VFECore.ScenPart_ForcedFactionGoodwill" MayRequire="Neronix17.OuterRim.RebelAlliance">
+					<def>VFEC_ForcedFactionGoodwill</def>
+					<factionDef>OuterRim_RebelAlliance</factionDef>
+					<affectStartingGoodwill>True</affectStartingGoodwill>
+					<startingGoodwillRange>-100~-100</startingGoodwillRange>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef> -->
+
+</Defs>

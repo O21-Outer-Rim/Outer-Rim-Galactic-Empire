@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRim_UniformBodyFabricatedBase">
+		<defName>OuterRim_ImperialCadetUniform</defName>
+		<label>imperial cadet uniform</label>
+		<description>A durable utalitarian uniform used by cadets of the Galactic Empire.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/ImperialCadet/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<tags Inherit="False">
+				<li>ImperialCadet</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/ImperialCadet/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>OuterRim_ApparelGalacticEmpire</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="OuterRim_LightHelmetFabricatedBase" Name="OuterRimImperialCadetHelmetBase">
+		<defName>OuterRim_ImperialCadetHelmet</defName>
+		<label>imperial cadet helmet</label>
+		<description>An armoured helmet used by cadets of the Galactic Empire.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/ImperialCadet/Head</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.1</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			<tags Inherit="False">
+				<li>ImperialCadet</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/ImperialCadet/Head</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>OuterRim_ApparelGalacticEmpire</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="OuterRimImperialCadetHelmetBase">
+		<defName>OuterRim_ImperialCadetHelmetAlt</defName>
+		<label>imperial cadet helmet (open)</label>
+		<description>An armoured helmet used by cadets of the Galactic Empire.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/ImperialCadet/HeadAlt</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>OuterRim/Apparel/ImperialCadet/HeadAlt</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+</Defs>

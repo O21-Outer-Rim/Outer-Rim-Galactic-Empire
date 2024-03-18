@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRim_UniformBodyFabricatedBase" Name="ImperialOfficerUniformBase">
+		<defName>OuterRim_ImperialOfficerUniform</defName>
+		<label>imperial officer uniform</label>
+		<description>A durable utalitarian uniform used by officers of the Galactic Empire.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/ImperialUniform/Navy/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialOfficer</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/ImperialUniform/Navy/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>OuterRim_ApparelGalacticEmpire</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="OuterRim_UniformHeadwearFabricatedBase" Name="ImperialOfficerCapBase">
+		<defName>OuterRim_ImperialOfficerCap</defName>
+		<label>imperial officer cap</label>
+		<description>A durable utalitarian uniform used by officers of the Galactic Empire.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/ImperialUniform/Navy/Head</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<bodyPartGroups Inherit="False">
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<tags Inherit="False">
+				<li>ImperialOfficer</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/ImperialUniform/Navy/Head</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>OuterRim_ApparelGalacticEmpire</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>

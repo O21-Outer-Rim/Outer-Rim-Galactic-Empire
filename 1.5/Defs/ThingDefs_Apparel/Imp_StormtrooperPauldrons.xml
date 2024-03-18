@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="OuterRim_MediumPauldronsFabricatedBase" Name="StormtrooperArmorPauldronBase">
+		<defName>OuterRim_StormtrooperPauldrons</defName>
+		<label>stormtrooper pauldrons</label>
+		<description>Armoured pauldrons used by the Galactic Empire in the Stormtrooper Corps</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/Stormtrooper/StandardPauldrons/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialApparel</li>
+				<li>ImperialStormtrooper</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/Stormtrooper/StandardPauldrons/Apparel</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>OuterRim_ApparelGalacticEmpire</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="StormtrooperArmorPauldronBase">
+		<defName>OuterRim_StormtrooperPauldrons_Enlisted</defName>
+		<label>stormtrooper pauldrons (black)</label>
+		<graphicData>
+			<texPath>OuterRim/Apparel/Stormtrooper/RankedPauldrons_Black/Apparel</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialStormtrooperEnlisted</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/Stormtrooper/RankedPauldrons_Black/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="StormtrooperArmorPauldronBase">
+		<defName>OuterRim_StormtrooperPauldrons_Sergeant</defName>
+		<label>stormtrooper pauldrons (white)</label>
+		<graphicData>
+			<texPath>OuterRim/Apparel/Stormtrooper/RankedPauldrons/Apparel</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialStormtrooperSergeant</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/Stormtrooper/RankedPauldrons/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="StormtrooperArmorPauldronBase">
+		<defName>OuterRim_StormtrooperPauldrons_Artillery</defName>
+		<label>stormtrooper pauldrons (yellow)</label>
+		<graphicData>
+			<texPath>OuterRim/Apparel/Stormtrooper/RankedPauldrons_Yellow/Apparel</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialStormtrooperSpecialist</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/Stormtrooper/RankedPauldrons_Yellow/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="StormtrooperArmorPauldronBase">
+		<defName>OuterRim_StormtrooperPauldrons_Officer</defName>
+		<label>stormtrooper pauldrons (orange)</label>
+		<graphicData>
+			<texPath>OuterRim/Apparel/Stormtrooper/RankedPauldrons_Orange/Apparel</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialStormtrooperOfficer</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/Stormtrooper/RankedPauldrons_Orange/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="StormtrooperArmorPauldronBase">
+		<defName>OuterRim_StormtrooperPauldrons_Commander</defName>
+		<label>stormtrooper pauldrons (red)</label>
+		<graphicData>
+			<texPath>OuterRim/Apparel/Stormtrooper/RankedPauldrons_Red/Apparel</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialStormtrooperOfficer</li>
+				<li>ImperialStormtrooperSpecialist</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/Stormtrooper/RankedPauldrons_Red/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="StormtrooperArmorPauldronBase">
+		<defName>OuterRim_StormtrooperPauldrons_Pride</defName>
+		<label>stormtrooper pauldrons (pride)</label>
+		<graphicData>
+			<texPath>OuterRim/Apparel/Stormtrooper/PridePauldrons/Apparel</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255, 255, 255)</color>
+			<colorTwo>(255, 255, 255)</colorTwo>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialPride</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/Stormtrooper/PridePauldrons/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+
+</Defs>

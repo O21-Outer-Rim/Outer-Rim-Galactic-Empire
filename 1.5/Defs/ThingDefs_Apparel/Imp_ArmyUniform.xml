@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ImperialOfficerUniformBase">
+		<defName>OuterRim_ImperialArmyUniform</defName>
+		<label>imperial army uniform</label>
+		<description>A durable utalitarian uniform used by the Galactic Empire Army.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/ImperialArmy/Uniform/Apparel</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(119, 145, 108)</color>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialArmy</li>
+				<li>ImperialArmyFatigues</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/ImperialArmy/Uniform/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(119, 145, 108)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<ThingDef ParentName="ImperialOfficerCapBase">
+		<defName>OuterRim_ImperialArmyCap</defName>
+		<label>imperial army cap</label>
+		<description>A durable utalitarian uniform used by the Galactic Empire Army.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/ImperialArmy/Uniform/Head</texPath>
+			<shaderType>Cutout</shaderType>
+			<color>(119, 145, 108)</color>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialArmy</li>
+				<li>ImperialArmyFatigues</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/ImperialArmy/Uniform/Head</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(119, 145, 108)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+</Defs>

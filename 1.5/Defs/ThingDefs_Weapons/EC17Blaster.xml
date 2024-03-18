@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRimBlasterBase_Pistol">
+		<defName>OuterRim_EC17Blaster</defName>
+		<label>ec-17 scout blaster</label>
+		<description>The EC-17 hold-out blaster, also known as the scout pistol, flash pistol, or scout trooper blaster, was a standard-issue hold-out blaster pistol for Imperial scout troopers and patrol troopers, manufactured by BlasTech Industries.</description>
+		<graphicData>
+			<texPath>OuterRim/Weapons/EC17Blaster</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
+		</recipeMaker>
+		<weaponTags>
+			<li>ORImperialAny</li>
+			<li>ORImperialLight</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OuterRim_ImperialWeapons</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OuterRim_Bullet_PistolGreen</defaultProjectile>
+				<warmupTime>0.6</warmupTime>
+				<range>24</range>
+				<soundCast>OuterRim_Shot_MediumBlasterBolt</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="OuterRimBlasterBase_Projectile">
+		<defName>OuterRim_Bullet_EC17Blaster</defName>
+		<graphicData>
+			<texPath>OuterRim/Projectile/BlasterBolt_Green</texPath>
+		</graphicData>
+		<projectile>
+			<damageAmountBase>14</damageAmountBase>
+		</projectile>
+	</ThingDef>
+
+</Defs>

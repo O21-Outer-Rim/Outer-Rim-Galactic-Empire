@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRimBlasterBase_Pistol">
+		<defName>OuterRim_SE14RBlaster</defName>
+		<label>se-14r blaster</label>
+		<description>The SE-14r light repeating blaster, also known as the SE-14r blaster pistol, the SE-14r blaster rifle, or simply the SE-14 pistol, was a light repeating blaster manufactured by BlasTech Industries designed to be disassembled and fitted with a scope. Greatly resembling the SE-14C blaster pistol, it was used by personnel of the Galactic Empire, including the Imperial Intelligence's death troopers, regular stormtroopers, and some officers.</description>
+		<graphicData>
+			<texPath>OuterRim/Weapons/SE14CBlaster</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
+		</recipeMaker>
+		<weaponTags>
+			<li>ORImperialAny</li>
+			<li>ORImperialLight</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OuterRim_ImperialWeapons</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OuterRim_Bullet_PistolGreen</defaultProjectile>
+				<warmupTime>0.6</warmupTime>
+				<range>26</range>
+				<soundCast>OuterRim_Shot_SE14RBlasterBolt</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="OuterRimBlasterBase_Projectile">
+		<defName>OuterRim_Bullet_SE14RBlaster</defName>
+		<graphicData>
+			<texPath>OuterRim/Projectile/BlasterBolt_Green</texPath>
+		</graphicData>
+		<projectile>
+			<damageAmountBase>14</damageAmountBase>
+		</projectile>
+	</ThingDef>
+
+</Defs>

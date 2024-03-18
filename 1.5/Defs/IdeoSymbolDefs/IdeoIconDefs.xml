@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<IdeoIconDef>
+		<defName>OuterRim_Empire</defName>
+		<iconPath>OuterRim/UI/Cultures/Empire</iconPath>
+	</IdeoIconDef>
+
+</Defs>
