@@ -10,9 +10,6 @@
 			<drawSize>1.1</drawSize>	
 		</graphicData>
 		<equippedAngleOffset>45</equippedAngleOffset>
-		<recipeMaker>
-			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
-		</recipeMaker>
 		<weaponTags>
 			<li>ORImperialAny</li>
 			<li>ORImperialSniper</li>

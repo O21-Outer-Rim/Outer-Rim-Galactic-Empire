@@ -203,11 +203,6 @@
 					<thingDef>OuterRim_ComponentHypertech</thingDef>
 					<count>20</count>
 				</li>
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>OuterRim_ResearchCore_GalacticEmpire</thingDef>
-					<count>1</count>
-				</li>
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">
 					<def>ScatterThingsNearPlayerStart</def>
 					<thingDef>Steel</thingDef>
