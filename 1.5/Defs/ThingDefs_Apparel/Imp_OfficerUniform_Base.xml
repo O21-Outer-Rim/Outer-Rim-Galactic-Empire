@@ -11,9 +11,6 @@
 			<shaderType>CutoutComplex</shaderType>
 			<color>(255, 255, 255)</color>
 		</graphicData>
-		<recipeMaker>
-			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
-		</recipeMaker>
 		<apparel>
 			<tags Inherit="False">
 				<li>ImperialOfficer</li>
@@ -44,9 +41,6 @@
 			<shaderType>CutoutComplex</shaderType>
 			<color>(255, 255, 255)</color>
 		</graphicData>
-		<recipeMaker>
-			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
-		</recipeMaker>
 		<apparel>
 			<bodyPartGroups Inherit="False">
 				<li>UpperHead</li>

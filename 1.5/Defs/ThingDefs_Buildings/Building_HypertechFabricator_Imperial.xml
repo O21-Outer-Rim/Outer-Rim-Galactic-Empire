@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- <ThingDef ParentName="HypertechFabricatorBase">
+	<ThingDef ParentName="HypertechFabricatorBase">
 		<defName>OuterRim_HypertechFabricator_Imperial</defName>
 		<label>imperial fabricator</label>
 		<description>A hypertech work station for creating Galactic Empire equipment.</description>
@@ -17,6 +17,6 @@
 		<researchPrerequisites Inherit="False">
 			<li>OuterRim_ImperialArmory</li>
 		</researchPrerequisites>
-	</ThingDef> -->
+	</ThingDef>
 
 </Defs>

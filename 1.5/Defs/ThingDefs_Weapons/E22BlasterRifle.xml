@@ -11,9 +11,6 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.1</MoveSpeed>
 		</equippedStatOffsets>
-		<recipeMaker>
-			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
-		</recipeMaker>
 		<weaponTags>
 			<li>ORImperialAny</li>
 			<li>ORImperialStandard</li>

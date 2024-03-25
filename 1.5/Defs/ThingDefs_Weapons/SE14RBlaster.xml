@@ -8,9 +8,6 @@
 		<graphicData>
 			<texPath>OuterRim/Weapons/SE14CBlaster</texPath>
 		</graphicData>
-		<recipeMaker>
-			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
-		</recipeMaker>
 		<weaponTags>
 			<li>ORImperialAny</li>
 			<li>ORImperialLight</li>

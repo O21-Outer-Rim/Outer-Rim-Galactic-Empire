@@ -8,9 +8,6 @@
 		<graphicData>
 			<texPath>OuterRim/Weapons/E11Blaster</texPath>
 		</graphicData>
-		<recipeMaker>
-			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
-		</recipeMaker>
 		<weaponTags>
 			<li>ORImperialAny</li>
 			<li>ORImperialStandard</li>

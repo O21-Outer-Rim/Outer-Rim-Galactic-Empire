@@ -20,9 +20,9 @@
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0</Flammability>
 		</statBases>
-		<recipeMaker>
-			<researchPrerequisite>OuterRim_ImperialArmory</researchPrerequisite>
-		</recipeMaker>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
 		<weaponTags>
 			<li>ORImperialAny</li>
 			<li>ORImperialHeavy</li>

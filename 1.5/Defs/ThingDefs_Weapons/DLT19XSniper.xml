@@ -18,9 +18,6 @@
 			<li>ORImperialSniper</li>
 			<li>ORRebelSniper</li>
 		</weaponTags>
-		<tradeTags>
-			<li>OuterRim_ImperialWeapons</li>
-		</tradeTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>

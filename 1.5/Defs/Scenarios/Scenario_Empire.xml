@@ -70,16 +70,6 @@
 					<thingDef>OuterRim_ComponentHypertech</thingDef>
 					<count>30</count>
 				</li>
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>OuterRim_ResearchCore_GalacticEmpire</thingDef>
-					<count>1</count>
-				</li>
-				<!-- <li Class="ScenPart_StartingThing_Defined" MayRequire="Neronix17.OuterRim.DroidDepot">
-					<def>StartingThing_Defined</def>
-					<thingDef>OuterRim_MSEDroidPlatform</thingDef>
-					<count>1</count>
-				</li> -->
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">
 					<def>ScatterThingsNearPlayerStart</def>
 					<thingDef>Steel</thingDef>
@@ -111,7 +101,7 @@
 				</li>
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
-					<project>OuterRim_ImperialArmory</project>
+					<project>OuterRim_HypertechFabrication</project>
 				</li>
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
