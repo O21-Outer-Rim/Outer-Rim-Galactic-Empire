@@ -126,6 +126,7 @@
 			<color>(255, 255, 255)</color>
 			<colorTwo>(255, 255, 255)</colorTwo>
 		</graphicData>
+		<generateCommonality>0</generateCommonality>
 		<apparel>
 			<tags Inherit="False">
 				<li>ImperialPride</li>
