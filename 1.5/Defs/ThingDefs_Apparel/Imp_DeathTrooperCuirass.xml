@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="OuterRim_HeavyArmorFabricatedBase" Name="DeathTrooperArmorCuirassBase">
+		<defName>OuterRim_DeathTrooperCuirass</defName>
+		<label>death trooper cuirass</label>
+		<description>An armoured cuirass used by the Galactic Empire in the Stormtrooper Corps.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/Stormtrooper/DeathCuirass/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(51, 51, 51)</color>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialApparel</li>
+				<li>ImperialDeathTrooper</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/Stormtrooper/DeathCuirass/Apparel</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(51, 51, 51)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>OuterRim_ApparelGalacticEmpire</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

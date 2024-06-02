@@ -75,6 +75,7 @@
 		<apparelRequired>
 			<li>OuterRim_ImperialOfficerUniform_Black</li>
 			<li>OuterRim_ImperialOfficerCap_Black</li>
+			<li>OuterRim_Belt_TemperatureRegulator</li>
 		</apparelRequired>
 		<combatPower>50</combatPower>
 		<modExtensions>
@@ -369,9 +370,9 @@
 		</apparelTags>
 		<apparelRequired>
 			<li>OuterRim_Bodysuit</li>
-			<li>OuterRim_StormtrooperCuirass</li>
-			<li>OuterRim_StormtrooperPauldrons</li>
-			<li>OuterRim_StormtrooperHelmet</li>
+			<li>OuterRim_SnowtrooperCuirass</li>
+			<li>OuterRim_SnowtrooperPauldrons</li>
+			<li>OuterRim_SnowtrooperHelmet</li>
 		</apparelRequired>
 		<combatPower>100</combatPower>
 		<modExtensions>
@@ -442,6 +443,7 @@
 		<apparelRequired>
 			<li>OuterRim_ImperialOfficerUniform</li>
 			<li>OuterRim_ImperialOfficerCap</li>
+			<li>OuterRim_Belt_TemperatureRegulator</li>
 		</apparelRequired>
 		<combatPower>175</combatPower>
 		<modExtensions>

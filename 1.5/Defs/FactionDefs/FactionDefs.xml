@@ -52,7 +52,7 @@
 			<li>OuterRim_GalacticEmpire_Base</li>
 		</baseTraderKinds>
 		<allowedArrivalTemperatureRange>
-			<min>-50</min>
+			<min>-30</min>
 			<max>45</max>
 		</allowedArrivalTemperatureRange>
 		<maxPawnCostPerTotalPointsCurve>
@@ -76,6 +76,20 @@
 					<OuterRim_ImpStormJump>3</OuterRim_ImpStormJump>
 					<OuterRim_ImpStormArty>3</OuterRim_ImpStormArty>
 					<OuterRim_ImpStormIncinerator>6</OuterRim_ImpStormIncinerator>
+					<OuterRim_ImpStormScout>10</OuterRim_ImpStormScout>
+					<OuterRim_ImpStormtrooper>20</OuterRim_ImpStormtrooper>
+				</options>
+				<minTemperature>0</minTemperature>
+				<maxTemperature>30</maxTemperature>
+			</li>
+			<!-- ====== Death Trooper Squad ====== -->
+			<li Class="TabulaRasa.PawnGroupMaker_Temperature">
+				<kindDef>Combat</kindDef>
+				<options>
+					<!-- <OuterRim_SithInquisitor>0.1</OuterRim_SithInquisitor> -->
+					<OuterRim_ImpISBAgent>1</OuterRim_ImpISBAgent>
+					<OuterRim_ImpDeathTrooper>5</OuterRim_ImpDeathTrooper>
+					<OuterRim_ImpStormtrooper_Officer>5</OuterRim_ImpStormtrooper_Officer>
 					<OuterRim_ImpStormScout>10</OuterRim_ImpStormScout>
 					<OuterRim_ImpStormtrooper>20</OuterRim_ImpStormtrooper>
 				</options>
@@ -149,16 +163,30 @@
 				</guards>
 			</li>
 			<li>
+				<!-- Death Trooper Trader Variant -->
+				<kindDef>Trader</kindDef>
+				<traders>
+					<OuterRim_ImperialTrader>1</OuterRim_ImperialTrader>
+				</traders>
+				<carriers>
+					<Muffalo>4</Muffalo>
+				</carriers>
+				<guards>
+					<OuterRim_ImpDeathTrooper>5</OuterRim_ImpDeathTrooper>
+				</guards>
+			</li>
+			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
 					<!-- <OuterRim_SithInquisitor>0.1</OuterRim_SithInquisitor> -->
 					<OuterRim_ImpISBAgent>1</OuterRim_ImpISBAgent>
 					<OuterRim_ImperialOfficer>1</OuterRim_ImperialOfficer>
+					<OuterRim_ImpDeathTrooper>5</OuterRim_ImpDeathTrooper>
 					<OuterRim_ImpStormtrooper_Officer>5</OuterRim_ImpStormtrooper_Officer>
 					<OuterRim_ImpStormArty>3</OuterRim_ImpStormArty>
 					<OuterRim_ImpStormJump>3</OuterRim_ImpStormJump>
 					<OuterRim_ImpStormIncinerator>6</OuterRim_ImpStormIncinerator>
-					<!-- <OuterRim_ImperialKXSecurityDroid MayRequire="Neronix17.OuterRim.DroidDepot">10</OuterRim_ImperialKXSecurityDroid> -->
+					<OuterRim_ImperialKXSecurityDroid MayRequire="Neronix17.OuterRim.DroidDepot">10</OuterRim_ImperialKXSecurityDroid>
 					<OuterRim_ImpStormtrooper>20</OuterRim_ImpStormtrooper>
 				</options>
 			</li>
@@ -171,6 +199,7 @@
 					<OuterRim_ImpStormJump>3</OuterRim_ImpStormJump>
 					<OuterRim_ImperialArmyHeavy>5</OuterRim_ImperialArmyHeavy>
 					<OuterRim_ImperialArmyTrooper>20</OuterRim_ImperialArmyTrooper>
+					<OuterRim_ImpDeathTrooper>5</OuterRim_ImpDeathTrooper>
 				</options>
 			</li>
 		</pawnGroupMakers>

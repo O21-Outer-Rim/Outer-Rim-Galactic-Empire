@@ -1,6 +1,89 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+	<!-- <TabulaRasa.UpdateDef>
+		<defName>OuterRim_Empire_</defName>
+		<date></date>
+		<banner>UpdateInfo/O21OuterRim</banner>
+		<contentList>
+			<li>
+				<header>New Equipment</header>
+				<text>- SCAR Heavy Cuirass, Pauldrons and Helmet
+- SCAR Leader Cuirass, Pauldrons and Helmet
+- SCAR Tech Cuirass, Pauldrons and Helmet
+- SCAR Shade Cuirass, Pauldrons and Helmet
+- SCAR Tactical Cuirass, Pauldrons and Helmet
+- SCAR Burner Cuirass, Pauldrons and Helmet
+- Imperial Pilot Jumpsuit and Helmet</text>
+			</li>
+			<li>
+				<header>New Event - SCAR Assault</header>
+				<text>If the Empire is currently hostile towards you and your colony can recieve raids above 7500 points, this event can trigger rarely. During a SCAR Assault, a squad of 7 SCAR Troopers will deploy to attack you.
+
+If you would prefer not to have this event it can be disabled in the mod settings. You can alternatively add more of a challenge and have it include temporary disabling of automatic turrets.</text>
+			</li>
+		</contentList>
+		<links>
+			<li>
+				<linkLabel>Steam Workshop</linkLabel>
+				<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2919248699</linkUrl>
+				<linkTex>TabulaRasa/UI/Steam</linkTex>
+			</li>
+			<li>
+				<linkLabel>Outer Rim Collection</linkLabel>
+				<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1927864603</linkUrl>
+			</li>
+		</links>
+		<important>False</important>
+	</TabulaRasa.UpdateDef> -->
+
+	<TabulaRasa.UpdateDef>
+		<defName>OuterRim_Empire_06062024</defName>
+		<date>2024/06/06</date>
+		<banner>UpdateInfo/O21OuterRim</banner>
+		<contentList>
+			<li>
+				<header>New Equipment</header>
+				<text>- Snow Trooper Cuirass, Pauldrons, Helmet and Kama
+- Death Trooper Cuirass, Pauldrons and Helmet
+- E-11D Blaster Carbine
+- Shore Trooper Cuirass, Pauldrons and Helmet
+- Imperial Jumpsuit
+- Imperial Gunner Helmet
+- Imperial Technician Helmet</text>
+			</li>
+			<li>
+				<header>New Troopers</header>
+				<text>There are now several new trooper types!
+- Snow Troopers - will show up in raids on maps with cold climates.
+- Death Troopers - can show up in raids and Imperial settlements, or with traders.
+- Imperial Gunners - Only really seen in Imperial settlements.
+- Imperial Technician - Also only really in settlements, small number may be with traders.
+- Shore Troopers - will show up in temperate maps with a beach during raids.
+- Imperial Pilot - Again also only seen in settlements.
+
+These are of course all using the appropriate equipment.</text>
+			</li>
+			<li>
+				<header>Changes/Fixes</header>
+				<text>- Imperial Officers and Traders now spawn with a temperature regulator so they can better survive extreme cold/hot climates.
+- If you have Droid Depot, KX-Series droids will now spawn in Galactic Empire settlements.</text>
+			</li>
+		</contentList>
+		<links>
+			<li>
+				<linkLabel>Steam Workshop</linkLabel>
+				<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2919248699</linkUrl>
+				<linkTex>TabulaRasa/UI/Steam</linkTex>
+			</li>
+			<li>
+				<linkLabel>Outer Rim Collection</linkLabel>
+				<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1927864603</linkUrl>
+			</li>
+		</links>
+		<important>False</important>
+	</TabulaRasa.UpdateDef>
+
 	<TabulaRasa.UpdateDef>
 		<defName>OuterRim_Empire_29102023</defName>
 		<date>2023/10/29</date>
