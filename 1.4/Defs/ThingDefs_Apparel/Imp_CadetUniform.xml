@@ -4,7 +4,7 @@
 	<ThingDef ParentName="OuterRim_UniformBodyFabricatedBase">
 		<defName>OuterRim_ImperialCadetUniform</defName>
 		<label>imperial cadet uniform</label>
-		<description>A durable utalitarian uniform used by cadets of the Galactic Empire.</description>
+		<description>A durable utilitarian uniform used by cadets of the Galactic Empire.</description>
 		<graphicData>
 			<texPath>OuterRim/Apparel/ImperialCadet/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

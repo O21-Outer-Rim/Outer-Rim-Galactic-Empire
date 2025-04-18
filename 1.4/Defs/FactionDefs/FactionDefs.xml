@@ -69,7 +69,7 @@
 			<li Class="TabulaRasa.PawnGroupMaker_Temperature">
 				<kindDef>Combat</kindDef>
 				<options>
-					<!-- <OuterRim_SithInquisitor>0.1</OuterRim_SithInquisitor> -->
+					<OuterRim_SithInquisitor MayRequire="Neronix17.OuterRim.HokeyReligions">0.01</OuterRim_SithInquisitor>
 					<OuterRim_ImpISBAgent>1</OuterRim_ImpISBAgent>
 					<OuterRim_ImperialOfficer>1</OuterRim_ImperialOfficer>
 					<OuterRim_ImpStormtrooper_Officer>5</OuterRim_ImpStormtrooper_Officer>
@@ -99,7 +99,7 @@
 			<li Class="TabulaRasa.PawnGroupMaker_Temperature">
 				<kindDef>Combat</kindDef>
 				<options>
-					<!-- <OuterRim_SithInquisitor>0.1</OuterRim_SithInquisitor> -->
+					<OuterRim_SithInquisitor MayRequire="Neronix17.OuterRim.HokeyReligions">0.01</OuterRim_SithInquisitor>
 					<OuterRim_ImperialOfficer>1</OuterRim_ImperialOfficer>
 					<OuterRim_ImpStormtrooper_Officer>5</OuterRim_ImpStormtrooper_Officer>
 					<OuterRim_ImpStormArty>3</OuterRim_ImpStormArty>
@@ -113,7 +113,7 @@
 			<li Class="TabulaRasa.PawnGroupMaker_Temperature">
 				<kindDef>Combat</kindDef>
 				<options>
-					<!-- <OuterRim_SithInquisitor>0.1</OuterRim_SithInquisitor> -->
+					<OuterRim_SithInquisitor MayRequire="Neronix17.OuterRim.HokeyReligions">0.01</OuterRim_SithInquisitor>
 					<OuterRim_ImperialOfficer>1</OuterRim_ImperialOfficer>
 					<OuterRim_ImpStormtrooper_Officer>5</OuterRim_ImpStormtrooper_Officer>
 					<OuterRim_ImpStormArty>3</OuterRim_ImpStormArty>
@@ -151,14 +151,14 @@
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<!-- <OuterRim_SithInquisitor>0.1</OuterRim_SithInquisitor> -->
+					<OuterRim_SithInquisitor MayRequire="Neronix17.OuterRim.HokeyReligions">0.01</OuterRim_SithInquisitor>
 					<OuterRim_ImpISBAgent>1</OuterRim_ImpISBAgent>
 					<OuterRim_ImperialOfficer>1</OuterRim_ImperialOfficer>
 					<OuterRim_ImpStormtrooper_Officer>5</OuterRim_ImpStormtrooper_Officer>
 					<OuterRim_ImpStormArty>3</OuterRim_ImpStormArty>
 					<OuterRim_ImpStormJump>3</OuterRim_ImpStormJump>
 					<OuterRim_ImpStormIncinerator>6</OuterRim_ImpStormIncinerator>
-					<!-- <OuterRim_ImperialKXSecurityDroid MayRequire="Neronix17.OuterRim.DroidDepot">10</OuterRim_ImperialKXSecurityDroid> -->
+					<OuterRim_ImperialKXSecurityDroid MayRequire="Neronix17.OuterRim.DroidDepot">10</OuterRim_ImperialKXSecurityDroid>
 					<OuterRim_ImpStormtrooper>20</OuterRim_ImpStormtrooper>
 				</options>
 			</li>

@@ -14,13 +14,30 @@
 - SCAR Shade Cuirass, Pauldrons and Helmet
 - SCAR Tactical Cuirass, Pauldrons and Helmet
 - SCAR Burner Cuirass, Pauldrons and Helmet
-- Imperial Pilot Jumpsuit and Helmet</text>
+- Royal Guard Helmet, Cuirass, Pauldrons and Cloak
+- Imperial Force Pike
+- Imperial Technician Helmet
+- Imperial Pilot Helmet
+- Shore Trooper Cuirass, Pauldrons and Helmet</text>
 			</li>
 			<li>
 				<header>New Event - SCAR Assault</header>
 				<text>If the Empire is currently hostile towards you and your colony can recieve raids above 7500 points, this event can trigger rarely. During a SCAR Assault, a squad of 7 SCAR Troopers will deploy to attack you.
 
 If you would prefer not to have this event it can be disabled in the mod settings. You can alternatively add more of a challenge and have it include temporary disabling of automatic turrets.</text>
+			</li>
+			<li>
+				<header>New Troopers</header>
+				<text>There are now new trooper types!
+- Shore Troopers - Will show up in temperate maps spawning from water as a special raid.
+- Imperial Pilot - Only seen in settlements.
+- Imperial Technician - Also only in settlements, small number may be with traders.
+
+These are of course all using the appropriate new equipment.</text>
+			</li>
+			<li>
+				<header>Imperial Training Facilities</header>
+				<text>You can now send off pawns to train in Imperial Training Facilities! If you have are friendly enough with the Galactic Empire you can use the comms console to request a shuttle to one of their training facilities, the facility chosen will determine training received. Pawns put inside the shuttle will return 5 days later with their initial training. And yes, you can have them train at multiple facilities to combine all the training bonuses.</text>
 			</li>
 		</contentList>
 		<links>
@@ -38,8 +55,8 @@ If you would prefer not to have this event it can be disabled in the mod setting
 	</TabulaRasa.UpdateDef> -->
 
 	<TabulaRasa.UpdateDef>
-		<defName>OuterRim_Empire_06062024</defName>
-		<date>2024/06/06</date>
+		<defName>OuterRim_Empire_18042025</defName>
+		<date>2025/04/18</date>
 		<banner>UpdateInfo/O21OuterRim</banner>
 		<contentList>
 			<li>
@@ -47,27 +64,25 @@ If you would prefer not to have this event it can be disabled in the mod setting
 				<text>- Snow Trooper Cuirass, Pauldrons, Helmet and Kama
 - Death Trooper Cuirass, Pauldrons and Helmet
 - E-11D Blaster Carbine
-- Shore Trooper Cuirass, Pauldrons and Helmet
+- Range Trooper Cuirass, Fur Pauldrons and Helmet
 - Imperial Jumpsuit
-- Imperial Gunner Helmet
-- Imperial Technician Helmet</text>
+- Imperial Gunner Helmet</text>
 			</li>
 			<li>
 				<header>New Troopers</header>
 				<text>There are now several new trooper types!
 - Snow Troopers - will show up in raids on maps with cold climates.
 - Death Troopers - can show up in raids and Imperial settlements, or with traders.
-- Imperial Gunners - Only really seen in Imperial settlements.
-- Imperial Technician - Also only really in settlements, small number may be with traders.
-- Shore Troopers - will show up in temperate maps with a beach during raids.
-- Imperial Pilot - Again also only seen in settlements.
+- Range Troopers - can show up in raids (cold and temperate only) and Imperial settlements.
+- Imperial Gunners - Only seen in Imperial settlements.
 
-These are of course all using the appropriate equipment.</text>
+These are of course all using the appropriate new equipment.</text>
 			</li>
 			<li>
-				<header>Changes/Fixes</header>
+				<header>Fixes</header>
 				<text>- Imperial Officers and Traders now spawn with a temperature regulator so they can better survive extreme cold/hot climates.
-- If you have Droid Depot, KX-Series droids will now spawn in Galactic Empire settlements.</text>
+- If you have Droid Depot, KX-Series droids will now spawn in Galactic Empire settlements.
+- ISB Training now enhances more social stats, with the combat training being more minimal.</text>
 			</li>
 		</contentList>
 		<links>

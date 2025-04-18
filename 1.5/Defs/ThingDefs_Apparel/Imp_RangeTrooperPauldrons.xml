@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="OuterRim_HeavyPauldronsFabricatedBase">
+		<defName>OuterRim_RangeTrooperPauldrons</defName>
+		<label>range trooper pauldrons</label>
+		<description>Armoured fur covered pauldrons used by the Galactic Empire in the elite Range Corps</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/Stormtrooper/RangePauldrons/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialApparel</li>
+				<li>ImperialRangeTrooper</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/Stormtrooper/RangePauldrons/Apparel</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>OuterRim_ApparelGalacticEmpire</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>

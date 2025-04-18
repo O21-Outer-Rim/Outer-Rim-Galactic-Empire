@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<TabulaRasa.TrainingFacilityDef>
+		<defName>OuterRim_TrainingFacility_StormtrooperCorps</defName>
+		<label>Stormtrooper Corps</label>
+		<description>This facility provides training for the Stormtrooper Corps, focusing on techniques that improve accuracy, fire rate and dodge ability. Due to the nature of these techniques however, only those proficient in them will benefit, it will initially make them worse.</description>
+		<trainingTime>300000</trainingTime>
+		<trainingHediff>OuterRim_StormtrooperTraining</trainingHediff>
+		<trainingRange>0.05~0.1</trainingRange>
+	</TabulaRasa.TrainingFacilityDef>
+
+	<TabulaRasa.TrainingFacilityDef>
+		<defName>OuterRim_TrainingFacility_ImperialSecurityBureau</defName>
+		<label>Imperial Security Bureau</label>
+		<description>This facility provides training for ISB Agents, focusing on social and intelligence capabilities, leading to major improvements in trade, negotiations and research. ISB Agents are also given some minor combat training, however this is focused on melee as it is assumed they already have other training for ranged combat.</description>
+		<trainingTime>300000</trainingTime>
+		<trainingHediff>OuterRim_ISBTraining</trainingHediff>
+		<trainingRange>0.05~0.1</trainingRange>
+	</TabulaRasa.TrainingFacilityDef>
+
+	<TabulaRasa.TrainingFacilityDef>
+		<defName>OuterRim_TrainingFacility_DeathTrooperDivision</defName>
+		<label>Death Trooper Division</label>
+		<description>This facility provides training for the Death Trooper Division, focusing on techniques that improve accuracy, fire rate and dodge ability. The elite nature of this facility requires that prospective trainees have received Stormtrooper training already.</description>
+		<trainingTime>300000</trainingTime>
+		<requiredTraining>OuterRim_StormtrooperTraining</requiredTraining>
+		<trainingHediff>OuterRim_DeathTrooperTraining</trainingHediff>
+		<trainingRange>0.05~0.1</trainingRange>
+	</TabulaRasa.TrainingFacilityDef>
+
+</Defs>

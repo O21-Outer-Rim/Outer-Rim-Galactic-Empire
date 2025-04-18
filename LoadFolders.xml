@@ -7,5 +7,6 @@
 	<v1.5>
 		<li>/</li>
 		<li>1.5</li>
+		<li IfModActive="Neronix17.OuterRim.DroidDepot">1.5/Mods/OuterRimDroidDepot</li>
 	</v1.5>
 </loadFolders>

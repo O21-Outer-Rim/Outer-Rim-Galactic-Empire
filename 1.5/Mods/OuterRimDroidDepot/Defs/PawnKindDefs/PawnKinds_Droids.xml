@@ -43,7 +43,7 @@
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
 				<li>
-					<thingDef>OuterRim_DroidBattery_Full</thingDef>
+					<thingDef>Asimov_Chargepack</thingDef>
 					<countRange>3</countRange>
 				</li>
 			</subOptionsChooseOne>
@@ -53,7 +53,7 @@
 	</PawnKindDef>
 
 	<!-- <PawnKindDef ParentName="BaseImperialDroidPawn">
-		<defName>OuterRim_EMP_DTSeriesSentryDroid</defName>
+		<defName>OuterRim_ImperialDTSeriesSentryDroid</defName>
 		<label>DT Sentry Droid</label>
 		<labelPlural>DT Sentry Droids</labelPlural>
 		<race>OuterRim_DTSentryDroid</race>
@@ -61,7 +61,7 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>DTSeriesSentryDroidBackstory</li>
+					<li>OuterRimDroidBackstory</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -81,12 +81,12 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>KXSecurityDroidBackstory</li>
+					<li>OuterRimDroidBackstory</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
 		<weaponTags Inherit="false">
-			<li>ORImperialLight</li>
+			<li>ORImperialHeavy</li>
 		</weaponTags>
 		<combatPower>120</combatPower>
 	</PawnKindDef>

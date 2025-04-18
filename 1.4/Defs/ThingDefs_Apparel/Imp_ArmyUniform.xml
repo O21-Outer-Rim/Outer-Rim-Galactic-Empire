@@ -4,7 +4,7 @@
 	<ThingDef ParentName="ImperialOfficerUniformBase">
 		<defName>OuterRim_ImperialArmyUniform</defName>
 		<label>imperial army uniform</label>
-		<description>A durable utalitarian uniform used by the Galactic Empire Army.</description>
+		<description>A durable utilitarian uniform used by the Galactic Empire Army.</description>
 		<graphicData>
 			<texPath>OuterRim/Apparel/ImperialArmy/Uniform/Apparel</texPath>
 			<shaderType>CutoutComplex</shaderType>
@@ -31,7 +31,7 @@
 	<ThingDef ParentName="ImperialOfficerCapBase">
 		<defName>OuterRim_ImperialArmyCap</defName>
 		<label>imperial army cap</label>
-		<description>A durable utalitarian uniform used by the Galactic Empire Army.</description>
+		<description>A durable utilitarian uniform used by the Galactic Empire Army.</description>
 		<graphicData>
 			<texPath>OuterRim/Apparel/ImperialArmy/Uniform/Head</texPath>
 			<shaderType>Cutout</shaderType>
