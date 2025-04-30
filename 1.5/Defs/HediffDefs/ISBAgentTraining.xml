@@ -16,6 +16,8 @@
 				<minSeverity>0.0</minSeverity>
 				<label>enlisted</label>
 				<statOffsets>
+					<SocialImpact>0.05</SocialImpact>
+					<NegotiationAbility>0.15</NegotiationAbility>
 					<MeleeDodgeChance>1</MeleeDodgeChance>
 				</statOffsets>
 			</li>
@@ -23,36 +25,50 @@
 				<minSeverity>0.1</minSeverity>
 				<label>captain</label>
 				<statOffsets>
-					<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+					<SocialImpact>0.1</SocialImpact>
+					<TradePriceImprovement>0.05</TradePriceImprovement>
+					<NegotiationAbility>0.25</NegotiationAbility>
 					<AimingDelayFactor>-0.05</AimingDelayFactor>
-					<MeleeDodgeChance>2</MeleeDodgeChance>
+					<MeleeDodgeChance>1.5</MeleeDodgeChance>
 				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.4</minSeverity>
 				<label>major</label>
 				<statOffsets>
-					<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+					<SocialImpact>0.15</SocialImpact>
+					<TradePriceImprovement>0.1</TradePriceImprovement>
+					<ArrestSuccessChance>0.2</ArrestSuccessChance>
+					<NegotiationAbility>0.4</NegotiationAbility>
+					<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
 					<AimingDelayFactor>-0.15</AimingDelayFactor>
-					<MeleeDodgeChance>3</MeleeDodgeChance>
+					<MeleeDodgeChance>2</MeleeDodgeChance>
 				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.7</minSeverity>
 				<label>colonel</label>
 				<statOffsets>
-					<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+					<SocialImpact>0.2</SocialImpact>
+					<TradePriceImprovement>0.15</TradePriceImprovement>
+					<ArrestSuccessChance>0.3</ArrestSuccessChance>
+					<NegotiationAbility>0.5</NegotiationAbility>
+					<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
 					<AimingDelayFactor>-0.2</AimingDelayFactor>
-					<MeleeDodgeChance>4</MeleeDodgeChance>
+					<MeleeDodgeChance>2.5</MeleeDodgeChance>
 				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.9</minSeverity>
 				<label>general</label>
 				<statOffsets>
-					<ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+					<SocialImpact>0.25</SocialImpact>
+					<TradePriceImprovement>0.2</TradePriceImprovement>
+					<ArrestSuccessChance>0.4</ArrestSuccessChance>
+					<NegotiationAbility>0.6</NegotiationAbility>
+					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
 					<AimingDelayFactor>-0.3</AimingDelayFactor>
-					<MeleeDodgeChance>5</MeleeDodgeChance>
+					<MeleeDodgeChance>3</MeleeDodgeChance>
 				</statOffsets>
 			</li>
 		</stages>
@@ -61,12 +77,12 @@
 				<curvePoints>
 					<points>
 						<li>(0, 0.001)</li>
-						<li>(20, 0.1)</li>
-						<li>(50, 0.2)</li>
-						<li>(100, 0.4)</li>
-						<li>(250, 0.6)</li>
-						<li>(500, 0.8)</li>
-						<li>(1000, 1.0)</li>
+						<li>(10, 0.1)</li>
+						<li>(25, 0.2)</li>
+						<li>(50, 0.4)</li>
+						<li>(100, 0.6)</li>
+						<li>(200, 0.8)</li>
+						<li>(400, 1.0)</li>
 					</points>
 				</curvePoints>
 			</li>
