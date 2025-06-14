@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ImperialOfficerUniformBase">
+		<defName>OuterRim_ImperialJumpsuit</defName>
+		<label>imperial jumpsuit</label>
+		<description>A durable utilitarian uniform used by the Galactic Empire.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/ImperialJumpsuit/Apparel</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(54, 54, 54)</color>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialApparel</li>
+				<li>ImperialJumpsuit</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/ImperialJumpsuit/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(54, 54, 54)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+</Defs>

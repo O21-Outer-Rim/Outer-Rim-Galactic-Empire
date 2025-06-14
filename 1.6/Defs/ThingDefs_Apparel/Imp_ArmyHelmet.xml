@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<ThingDef ParentName="StormtrooperArmorHelmetBase">
+		<defName>OuterRim_ImperialArmyHelmet</defName>
+		<label>imperial army helmet</label>
+		<description>An armoured helmet used by the Galactic Empire in the Imperial Army.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/ImperialArmy/Helmet/Head</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(93, 110, 87)</color>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialArmy</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/ImperialArmy/Helmet/Head</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(93, 110, 87)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+</Defs>

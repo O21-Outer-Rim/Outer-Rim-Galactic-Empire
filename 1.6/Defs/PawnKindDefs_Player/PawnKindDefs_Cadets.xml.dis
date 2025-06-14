@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PawnKindDef ParentName="OuterRim_BaseColonyPawnKind">
+		<defName>OuterRim_Officer_Player</defName>
+		<label>Officer</label>
+		<race>Human</race>
+		<defaultFactionType>OuterRim_EmpirePlayerFaction</defaultFactionType>
+		<minGenerationAge>26</minGenerationAge>
+		<maxGenerationAge>40</maxGenerationAge>
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialStandard</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORImperialLight</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_ImperialOfficerUniform_Black</li>
+			<li>OuterRim_ImperialOfficerCap_Black</li>
+		</apparelRequired>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<additionalHediffs>
+					<li>
+						<hediff>OuterRim_StormtrooperTraining</hediff>
+						<severityRange>0.01~0.02</severityRange>
+					</li>
+				</additionalHediffs>
+				<randomAdditionalHediff>false</randomAdditionalHediff>
+				<clearChronicIllness>True</clearChronicIllness>
+				<clearAddictions>True</clearAddictions>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_BaseColonyPawnKind">
+		<defName>OuterRim_Cadet_Player</defName>
+		<label>Cadet</label>
+		<race>Human</race>
+		<defaultFactionType>OuterRim_EmpirePlayerFaction</defaultFactionType>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialStandard</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ImperialCadet</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_ImperialCadetUniform</li>
+			<li>OuterRim_ImperialCadetHelmet</li>
+		</apparelRequired>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<additionalHediffs>
+					<li>
+						<hediff>OuterRim_StormtrooperTraining</hediff>
+						<severityRange>0.01~0.02</severityRange>
+					</li>
+				</additionalHediffs>
+				<randomAdditionalHediff>false</randomAdditionalHediff>
+				<clearChronicIllness>True</clearChronicIllness>
+				<clearAddictions>True</clearAddictions>
+				<forcedAge>14</forcedAge>
+				<forcedDevelopmentStage>Child</forcedDevelopmentStage>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+</Defs>

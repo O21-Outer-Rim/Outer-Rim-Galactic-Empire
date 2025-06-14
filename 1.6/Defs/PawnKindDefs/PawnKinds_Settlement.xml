@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="OuterRim_ImperialSettlementTroopBase" Abstract="True">
+		<defaultFactionType>OuterRim_GalacticEmpire</defaultFactionType>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<itemQuality>Normal</itemQuality>
+		<isFighter>true</isFighter>
+		<race>Human</race>
+		<minGenerationAge>20</minGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>1300</min>
+			<max>2000</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>40000</min>
+			<max>40000</max>
+		</weaponMoney>
+		<techHediffsMoney>
+			<min>12000</min>
+			<max>20000</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.9</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>1</countRange>
+				</li>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>10~300</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<!-- <backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>ImperialBackstory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride> -->
+		<techHediffsChance>0.1</techHediffsChance>
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>10~20</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_ImperialSettlementTroopBase">
+		<defName>OuterRim_ImperialGunner</defName>
+		<label>imperial gunner</label>
+		<labelPlural>imperial gunners</labelPlural>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialLight</li>
+		</weaponTags>
+		<apparelTags Inherit="False">
+			<li>ImperialJumpsuit</li>
+			<li>ImperialGunner</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelRequired>
+			<li>OuterRim_ImperialJumpsuit</li>
+			<li>OuterRim_ImperialGunnerHelmet</li>
+		</apparelRequired>
+		<combatPower>100</combatPower>
+	</PawnKindDef>
+
+</Defs>

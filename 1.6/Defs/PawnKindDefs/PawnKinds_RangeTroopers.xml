@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PawnKindDef ParentName="OuterRim_EMPStormBase">
+		<defName>OuterRim_ImpRangeTrooper</defName>
+		<label>Range trooper</label>
+		<labelPlural>Range troopers</labelPlural>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORImperialStandardEarly</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>ImperialRangeTrooper</li>
+			<li>ORThermalDetBelt</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_Bodysuit</li>
+			<li>OuterRim_RangeTrooperCuirass</li>
+			<li>OuterRim_RangeTrooperPauldrons</li>
+			<li>OuterRim_RangeTrooperHelmet</li>
+		</apparelRequired>
+		<combatPower>200</combatPower>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<additionalHediffs>
+					<li>
+						<hediff>OuterRim_StormtrooperTraining</hediff>
+						<severityRange>0.8~1.0</severityRange>
+					</li>
+				</additionalHediffs>
+				<randomAdditionalHediff>false</randomAdditionalHediff>
+				<clearChronicIllness>True</clearChronicIllness>
+				<clearAddictions>True</clearAddictions>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+</Defs>

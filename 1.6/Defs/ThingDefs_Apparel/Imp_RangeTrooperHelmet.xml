@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="OuterRim_HeavyHelmetFabricatedBase">
+		<defName>OuterRim_RangeTrooperHelmet</defName>
+		<label>range trooper helmet</label>
+		<description>An armoured helmet used by the Galactic Empire in the elite Range Corps.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/Stormtrooper/RangeHelmet/Head</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			<tags Inherit="False">
+				<li>ImperialApparel</li>
+				<li>ImperialRangeTrooper</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/Stormtrooper/RangeHelmet/Head</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>OuterRim_ApparelGalacticEmpire</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>

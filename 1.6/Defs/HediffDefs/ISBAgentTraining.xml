@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>OuterRim_ISBTraining</defName>
+		<hediffClass>OuterRimCore.Hediff_Training</hediffClass>
+		<label>training (isb agent)</label>
+		<description>The training provided to all troops in the Imperial Security Bureau improves with real combat experience, for every pawn they down or kill.</description>
+		<defaultLabelColor>RGB(190, 255, 92)</defaultLabelColor>
+		<isBad>false</isBad>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<initialSeverity>0.001</initialSeverity>
+		<stages>
+			<li>
+				<minSeverity>0.0</minSeverity>
+				<label>enlisted</label>
+				<statOffsets>
+					<SocialImpact>0.05</SocialImpact>
+					<NegotiationAbility>0.15</NegotiationAbility>
+					<MeleeDodgeChance>1</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.1</minSeverity>
+				<label>captain</label>
+				<statOffsets>
+					<SocialImpact>0.1</SocialImpact>
+					<TradePriceImprovement>0.05</TradePriceImprovement>
+					<NegotiationAbility>0.25</NegotiationAbility>
+					<AimingDelayFactor>-0.05</AimingDelayFactor>
+					<MeleeDodgeChance>1.5</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<label>major</label>
+				<statOffsets>
+					<SocialImpact>0.15</SocialImpact>
+					<TradePriceImprovement>0.1</TradePriceImprovement>
+					<ArrestSuccessChance>0.2</ArrestSuccessChance>
+					<NegotiationAbility>0.4</NegotiationAbility>
+					<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+					<AimingDelayFactor>-0.15</AimingDelayFactor>
+					<MeleeDodgeChance>2</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.7</minSeverity>
+				<label>colonel</label>
+				<statOffsets>
+					<SocialImpact>0.2</SocialImpact>
+					<TradePriceImprovement>0.15</TradePriceImprovement>
+					<ArrestSuccessChance>0.3</ArrestSuccessChance>
+					<NegotiationAbility>0.5</NegotiationAbility>
+					<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+					<AimingDelayFactor>-0.2</AimingDelayFactor>
+					<MeleeDodgeChance>2.5</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.9</minSeverity>
+				<label>general</label>
+				<statOffsets>
+					<SocialImpact>0.25</SocialImpact>
+					<TradePriceImprovement>0.2</TradePriceImprovement>
+					<ArrestSuccessChance>0.4</ArrestSuccessChance>
+					<NegotiationAbility>0.6</NegotiationAbility>
+					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
+					<AimingDelayFactor>-0.3</AimingDelayFactor>
+					<MeleeDodgeChance>3</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="OuterRimCore.DefModExt_TrainingCurve">
+				<curvePoints>
+					<points>
+						<li>(0, 0.001)</li>
+						<li>(10, 0.1)</li>
+						<li>(25, 0.2)</li>
+						<li>(50, 0.4)</li>
+						<li>(100, 0.6)</li>
+						<li>(200, 0.8)</li>
+						<li>(400, 1.0)</li>
+					</points>
+				</curvePoints>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+</Defs>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<CultureDef>
+		<defName>OuterRim_CultureNewOrder</defName>
+		<label>new order</label>
+		<description>The culture of the Galactic Empire</description>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">OuterRim_IdeoNewOrder</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">OuterRim_DeityNewOrder</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">OuterRim_DeityTypeMakerNewOrder</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">OuterRim_LeaderTitleMakerNewOrder</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">OuterRim_NamerFestivalNewOrder</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OuterRim_OriginRepublic</li>
+		</allowedPlaceTags>
+		<iconPath>OuterRim/UI/Cultures/Empire</iconPath>
+		<iconColor>(0.8, 0.8, 0.8)</iconColor>
+		<thingStyleCategories>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>OuterRim_StyleNewOrder</category>
+				<priority>2</priority>
+			</li> -->
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardRural</tag>
+				<baseWeight>0.1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardUrban</tag>
+				<baseWeight>0.2</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_CultureExtended">
+				<ideoIconDef>OuterRim_Empire</ideoIconDef>
+			</li>
+		</modExtensions>
+	</CultureDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>OuterRim_IdeoNewOrder</defName>
+		<rulePack>
+			<rulesStrings>
+				<!-- From symbol pack -->
+				<li>r_ideoName->New Order</li>
+				<li>r_ideoAdjective->Imperial</li>
+				<li>r_memberName->citizen</li>
+
+				<!-- Generic content -->
+				<li>globalAdjective->Galactic</li>
+				<li>globalAdjective->New</li>
+				<li>globalAdjective->True</li>
+				<li>globalAdjective->Reformed</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>OuterRim_DeityNewOrder</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityName->Palpatine</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>OuterRim_DeityTypeMakerNewOrder</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityType->Emperor</li>
+
+				<li>god->emperor</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>OuterRim_LeaderTitleMakerNewOrder</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_leaderTitle->governor</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>OuterRim_NamerFestivalNewOrder</defName>
+		<include>
+			<li>NamerFestivalGlobal</li>
+		</include>
+	</RulePackDef>
+
+</Defs>

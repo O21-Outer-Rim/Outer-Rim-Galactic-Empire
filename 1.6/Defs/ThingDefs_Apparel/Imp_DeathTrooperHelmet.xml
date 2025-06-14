@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="OuterRim_HeavyHelmetFabricatedBase" Name="DeathTrooperArmorHelmetBase">
+		<defName>OuterRim_DeathTrooperHelmet</defName>
+		<label>death trooper helmet</label>
+		<description>An armoured helmet used by the Galactic Empire in the Stormtrooper Corps.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/Stormtrooper/DeathHelmet/Head</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(51, 51, 51)</color>
+		</graphicData>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+			<ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			<tags Inherit="False">
+				<li>ImperialApparel</li>
+				<li>ImperialDeathTrooper</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/Stormtrooper/DeathHelmet/Head</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(51, 51, 51)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>OuterRim_ApparelGalacticEmpire</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>

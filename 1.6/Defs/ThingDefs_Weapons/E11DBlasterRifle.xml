@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRimBlasterBase_Rifle">
+		<defName>OuterRim_E11DBlasterRifle</defName>
+		<label>e-11d blaster rifle</label>
+		<description>The E-11 blaster rifle was a light but powerful blaster rifle manufactured by BlasTech Industries. It served as the standard issue weapon of Imperial stormtroopers. The blaster rifle was the successor to BlasTech's E-10 blaster rifle and was based on the DC-15A blaster carbine used by clone troopers during the Clone Wars.</description>
+		<graphicData>
+			<texPath>OuterRim/Weapons/E11DBlaster</texPath>
+		</graphicData>
+		<weaponTags>
+			<li>ORImperialAny</li>
+			<li>ORImperialDeathTrooper</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OuterRim_ImperialWeapons</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OuterRim_Bullet_PistolRed</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>32</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>OuterRim_Shot_DLT19DBlasterBolt</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+</Defs>

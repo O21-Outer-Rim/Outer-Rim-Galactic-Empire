@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="OuterRim_LightHelmetFabricatedBase">
+		<defName>OuterRim_ImperialGunnerHelmet</defName>
+		<label>imperial gunner helmet</label>
+		<description>A lightly armoured helmet used by imperial gunners.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/ImperialGunner/Helmet/ImpGunnerHelm</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(54, 54, 54)</color>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialApparel</li>
+				<li>ImperialGunner</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/ImperialGunner/Helmet/ImpGunnerHelm</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>OuterRim_ApparelGalacticEmpire</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

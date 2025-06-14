@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ImperialOfficerUniformBase">
+		<defName>OuterRim_ImperialOfficerUniform_White</defName>
+		<label>imperial officer uniform (white)</label>
+		<graphicData>
+			<texPath>OuterRim/Apparel/ImperialUniform/ISB/Apparel</texPath>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialOfficer</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/ImperialUniform/ISB/Apparel</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="ImperialOfficerCapBase">
+		<defName>OuterRim_ImperialOfficerCap_White</defName>
+		<label>imperial officer cap (white)</label>
+		<graphicData>
+			<texPath>OuterRim/Apparel/ImperialUniform/ISB/Head</texPath>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialOfficer</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/ImperialUniform/ISB/Head</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+</Defs>

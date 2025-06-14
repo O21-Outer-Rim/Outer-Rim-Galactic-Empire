@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/XenotypeDef[defName="OuterRim_Chiss"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="OuterRim_GalacticEmpire"]/xenotypeSet/xenotypeChances</xpath>
+			<value>
+				<OuterRim_Chiss>0.1</OuterRim_Chiss>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>
