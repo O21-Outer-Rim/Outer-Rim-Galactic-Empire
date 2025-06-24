@@ -24,6 +24,15 @@ namespace OuterRimGalacticEmpire
         public override void ExposeData()
         {
             base.ExposeData();
+            Scribe_Values.Look(ref enableInquisitors, "enableInquisitors", true);
+            Scribe_Values.Look(ref enableWookieeSlaves, "enableWookieeSlaves", true);
+
+            Scribe_Values.Look(ref enableOccupation, "enableOccupation", true);
+            Scribe_Values.Look(ref occupationFlyovers, "occupationFlyovers", true);
+            Scribe_Values.Look(ref occupationBroadcasts, "occupationBroadcasts", true);
+            Scribe_Values.Look(ref occupationInspections, "occupationInspections", true);
+            Scribe_Values.Look(ref occupationTaxes, "occupationTaxes", true);
+            Scribe_Values.Look(ref darthDolores, "darthDolores", true);
         }
 
         public bool IsValidSetting(string input)

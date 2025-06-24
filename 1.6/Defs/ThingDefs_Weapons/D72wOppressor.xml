@@ -33,7 +33,7 @@
 		</tradeTags>
 		<verbs>
 			<li>
-				<verbClass>HeavyWeapons.Verb_Shoot</verbClass>
+				<verbClass>VEF.Weapons.Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>OuterRim_Bullet_D72wOppressor</defaultProjectile>
 				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
@@ -50,10 +50,10 @@
 		</verbs>
 	</ThingDef>
 
-	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+	<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>OuterRim_Bullet_D72wOppressor</defName>
 		<label>heavy flamer shot</label>
-		<thingClass>VFECore.FlamethrowProjectile</thingClass>
+		<thingClass>VEF.Weapons.FlamethrowProjectile</thingClass>
 		<graphicData>
 			<texPath>OuterRim/Projectile/Proj_Flamer</texPath>
 			<texPathFadeOut>OuterRim/Projectile/Proj_FlamerFadeOut</texPathFadeOut>
@@ -75,6 +75,6 @@
 		<tickDamageRate>20</tickDamageRate>
 		<dealsDamageOnce>true</dealsDamageOnce>
 		<minDistanceToAffect>2</minDistanceToAffect>
-	</VFECore.ExpandableProjectileDef>
+	</VEF.Weapons.ExpandableProjectileDef>
 
 </Defs>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<ScenarioDef>
+	<ScenarioDef ParentName="ScenarioBase">
 		<defName>OuterRim_EmpireStart</defName>
 		<label>Imperial Troopers</label>
 		<description>The four of you arrive on this world, raw recruits sent to establish a self sufficient outpost as part of a new long term strategy. New recruits will be sent to you regularly to maintain a minimum garrison.\n\nNote: Reasonably easy due to research and equipment handed to you.</description>
@@ -117,13 +117,13 @@
 						<li>OuterRim_Starter_ImperialOutpostA</li>
 					</chooseFrom>
 				</li> -->
-				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+				<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
 					<def>VFEC_ForcedFactionGoodwill</def>
 					<factionDef>OuterRim_GalacticEmpire</factionDef>
 					<affectStartingGoodwill>True</affectStartingGoodwill>
 					<startingGoodwillRange>100~100</startingGoodwillRange>
 				</li>
-				<li Class="VFECore.ScenPart_ForcedFactionGoodwill" MayRequire="Neronix17.OuterRim.RebelAlliance">
+				<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill" MayRequire="Neronix17.OuterRim.RebelAlliance">
 					<def>VFEC_ForcedFactionGoodwill</def>
 					<factionDef>OuterRim_RebelAlliance</factionDef>
 					<affectStartingGoodwill>True</affectStartingGoodwill>
@@ -238,13 +238,13 @@
 					<textKey>GameStartDialog</textKey>
 					<closeSound>GameStartSting</closeSound>
 				</li>
-				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+				<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
 					<def>VFEC_ForcedFactionGoodwill</def>
 					<factionDef>OuterRim_GalacticEmpire</factionDef>
 					<affectStartingGoodwill>True</affectStartingGoodwill>
 					<startingGoodwillRange>100~100</startingGoodwillRange>
 				</li>
-				<li Class="VFECore.ScenPart_ForcedFactionGoodwill" MayRequire="Neronix17.OuterRim.RebelAlliance">
+				<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill" MayRequire="Neronix17.OuterRim.RebelAlliance">
 					<def>VFEC_ForcedFactionGoodwill</def>
 					<factionDef>OuterRim_RebelAlliance</factionDef>
 					<affectStartingGoodwill>True</affectStartingGoodwill>

@@ -16,7 +16,7 @@
 			</tags>
 		</apparel>
 		<comps>
-			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+			<li Class="VEF.Abilities.CompProperties_AbilitiesApparel">
 				<abilities>
 					<li>OuterRim_ImperialJetpackJump</li>
 				</abilities>
@@ -24,9 +24,9 @@
 		</comps>
 	</ThingDef>
 
-	<VFECore.Abilities.AbilityDef ParentName="OuterRimJetpackAbilityBase">
+	<VEF.Abilities.AbilityDef ParentName="OuterRimJetpackAbilityBase">
 		<defName>OuterRim_ImperialJetpackJump</defName>
 		<iconPath>OuterRim/Apparel/ImperialJetpack/Apparel</iconPath>
-	</VFECore.Abilities.AbilityDef>
+	</VEF.Abilities.AbilityDef>
 
 </Defs>
