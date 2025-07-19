@@ -14,6 +14,9 @@
 		<statBases>
 			<Insulation_Cold>45</Insulation_Cold>
 		</statBases>
+		<equippedStatOffsets>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+		</equippedStatOffsets>
 		<apparel>
 			<tags Inherit="False">
 				<li>ImperialApparel</li>

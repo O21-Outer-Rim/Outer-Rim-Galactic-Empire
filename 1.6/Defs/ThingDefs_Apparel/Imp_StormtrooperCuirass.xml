@@ -10,6 +10,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<color>(255, 255, 255)</color>
 		</graphicData>
+		<equippedStatOffsets>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
+		</equippedStatOffsets>
 		<apparel>
 			<tags Inherit="False">
 				<li>ImperialApparel</li>

@@ -14,6 +14,7 @@
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
 			<ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
 		</equippedStatOffsets>
 		<apparel>
 			<immuneToToxGasExposure>true</immuneToToxGasExposure>
